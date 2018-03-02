@@ -1,4 +1,4 @@
-# deepleraning.ai
+# deeplearning.ai
 Repo with the coding examples of the Coursera Deep Learning Specialization by Stanford University adjunct professors Andrew Ng and Kian Katanforoosh and teaching assistant Younes Bensouda Mourri.
 
 ------
