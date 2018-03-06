@@ -19,6 +19,7 @@ Repo with the coding examples of the Coursera Deep Learning Specialization by St
 <font size=1>Week2　Deep convolutional models: case studies</font>  
 <font size=1>Week3　Object detection</font>  
 <font size=1>Week4　Special applications: Face recognition & Neural style transfer</font>  
-   
+
+Handmade notes contributed by Tess Ferrandez
      
    
