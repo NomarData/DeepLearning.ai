@@ -15,9 +15,9 @@ menu: true
 
 * Course 1: Neural Networks and Deep Learning
 
-  * [PA week 1: Logistic Regression with a Neural Network mindset](ProgrammingAssignments/Logistic-Regression-with-a-Neural-Network-mindset)
-  * [PA week 2: Planar data classification with one hidden layer](ProgrammingAssignments/Planar-data-classification-with-one-hidden-layer)
-  * [PA week 3: Building your Deep Neural Network Step by Step](ProgrammingAssignments/Building-your-Deep-Neural-Network-Step-by-Step)
+  * [PA week 1: Logistic Regression with a Neural Network mindset](Logistic-Regression-with-a-Neural-Network-mindset)
+  * [PA week 2: Planar data classification with one hidden layer](Planar-data-classification-with-one-hidden-layer)
+  * [PA week 3: Building your Deep Neural Network Step by Step](Building-your-Deep-Neural-Network-Step-by-Step)
   * [PA week 3: Deep Neural Network Application](Deep-Neural-Network-Application)
 
 * Course 2: Improving Deep Neural Networks
