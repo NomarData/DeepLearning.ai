@@ -1,4 +1,4 @@
----
+![](---
 layout: list
 title: Course 1
 description: >
@@ -62,26 +62,26 @@ We can think of this a small neural network with a single neuron, that given the
 
 Let’s assume we know more things about the house, for instance number of bedrooms, postal code, wealth of the country, etc. Each of these things would imply other informations (like size of the family that can fit in, walkability, school quality in the neighbourhood, etc.). Those factors, then, influence the price. What we’re describing is a neural networks that takes certain features (size, n of bedrooms, etc), and can combine them into more abstract features (we can think of them as the walkability, school quality, etc that we talked about before) in order to better predict the price.
 
-![](/images/house_prediction.png)
+![](images/house_prediction.png)
 
 This nodes that placed between the input features and the output are called _hidden nodes_, and since each of them is connected to every input feature the NN is called _fully connected_.
 
 ### Supervised Learning
 The most value in DL is in *Supervised Learning* applications: you have an input X, and you want to predict the output Y. For instance:
 
-![](/images/supervised_learning.png)
+![](images/supervised_learning.png)
 
 
 Different types of Neural Networks are used for different kinds of input data. For instance for Real Estate and Online Advertising standard NNs work well, while for photo tagging Convolutional Neural Networks (CNNs) are the best, for sequence data Recurrent Neural Networks (RNNs) are used instead. For more complicated situations custom implementations are used.
 
-![](/images/NNtypes.png)
+![](images/NNtypes.png)
 
 Supervised Learning has been used both with _Structured Data_ (classic RMBS database for instance) and with _Unstructured Data_, like text, audio and images, where each feature (for instance a pixel in an image) doesn’t have a precise meaning by itself. DL greatly improved our capabilities of mailing sense of Unstructured Data. Those application made more “noise” in the media, but the economic implications of DL has been great on both uses.
 
 ### Why is Deep Learning taking off?
 The traditional learning algorithms (SVMs, logistic regression, etc.) have performances often plateau with increasing amount of data. In recent times with the digitalization of the society we’re starting to have massive amounts of data. With scale, bigger NNs start performing significantly better. Therefore, **scale** is what is driving deep learning progress.
 
-![](/images/deep_learning_scale.png)
+![](images/deep_learning_scale.png)
 
 With small training sets, the performances of the system are often driven by the skill of the person training the dataset in training the hyperparameters, engineering features, choosing the algorithm and so on. With very large datasets, Deep NNs are the best option compared to the aforementioned strategies.
 
@@ -94,7 +94,7 @@ This is very important also because the approach for creating new ML application
 In binary classification the goal is, given an input, predict to which of two classes this input belongs to. For instance, given the picture of a cat we want to classify it between cat (1) or not cat (0). In this case, if we have an RGB image which is 64 pixels by 64, we can represent it as a $$ 64 * 64 * 3 = 12288 $$ vector (3 because of the three channels R, G, and B for red, green and blue). We’ll use $$n_x$$ to indicate the number of features of the input (in this case 12288).
 
 Other notations useful for the course:
-![](/images/notation.png)
+![](images/notation.png)
 
 
 ### Logistic regression
@@ -120,7 +120,7 @@ $$
 
 This function would allow use to have a probability very close to 1 if the linear function outputs a very large value, or close to zero if it outputs a high negative value.
 
-![](/images/logistic_regression.png)
+![](images/logistic_regression.png)
 
 ### Logistic regression cost function
 For each training example $$(x^{(i)}, y^{(i)})$$, we want to compute:
@@ -167,7 +167,7 @@ This is going to be referred to as _cost_ function, whereas the _loss_ function 
 ### Gradient Descent
 The cost function is convex: we can find its global minimum. What Gradient Descent does is, initializing w and b from all zeros or from random values, starts from this initial value for J and makes step in the direction of the biggest gradient (steepest direction in the curve), until converging to the global optimum (or close by).
 
-![](/images/logistic_regression_gradiend_descent.png)
+![](images/logistic_regression_gradiend_descent.png)
 
 For the purpose of clarity, let’s consider a function $$J(w)$$. Gradient descent does the following:
 
@@ -194,7 +194,7 @@ b:= b- \alpha \frac{\delta J(w, b)}{db}
 $$
 
 Where we’re using the symbol $$\delta$$ because J is a function of two variables and therefore we use the symbol for the partial derivative.
-![](/images/logistic_regression_gradiend_descent1.png)
+![](images/logistic_regression_gradiend_descent1.png)
 
 ### Derivatives
 Let’s take a function $$f(a) = 3a$$. If we take a point with a coordinate 2, its value on the vertical axis is going to be $$f(2) = 3*2 = 6$$ If we move a little further on the right, let’s say to $$a = 2*0.001$$, we’ll have a value of $$f(2 * 0.001) = 6*003$$. The slope of the function is the ratio between the height and the width we moved, so in this case $$0.003/0.001 = 3$$. If we take $$a = 5$$, $$(f(a) = 15)$$ and calculate the value for $$a = 5 * 0.001$$, we’ll get the same thing: $$f(5*0.001) = 15*003$$. The slope is the same in this case
@@ -208,11 +208,11 @@ If $$a = 2.001$$, then $$f(a) \approx 4*004$$. This means that the derivative of
 If we take $$a = 5$$, $$f(a) = 25$$. If $$a = 5*0.001$$, $$f(a)\approx 25*0.01$$. Therefore, the derivative of f at $$a=5$$ is 10. In this case, the derivative of the function is 2a.
 
 One way to see this phenomenon is to look at the shape of the triangles we’d draw and thing about the height/width ratio.
-![](/images/derivatives.png)
+![](images/derivatives.png)
 
 More examples:
 
-![](/images/derivatives_intuitions.png)
+![](images/derivatives_intuitions.png)
 
 ### Computation graph
 We can see the computations of a neural network as divided in two parts: a forward path or _forward propagation_ in which we compute the output of the network, and a backward path or _back propagation_ in which we compute derivatives. The _computation graph_ explains why it’s organized this way.
@@ -227,7 +227,7 @@ We can consider this function as made of three computations:
 3. j = 3*v
 
 We can consider those three operations in a computational graph this way:
-![](/images/computation_graph.png)
+![](images/computation_graph.png)
 
 
 ### Derivatives with a Computation Graph
@@ -242,17 +242,17 @@ $$
 
 This process can be done starting from the last node in the computation graph, going backwards until we compute all the partial derivatives.
 
-![](/images/computation_graph_derivatives.png)
+![](images/computation_graph_derivatives.png)
 
 For the coding convention we’ll be using, we’ll call `dvar` the derivative of J with respect to `var` ($$dJ/dvar$$).
 
 ### Logistic Regression Gradient Descent
 To recap:
-![](/images/logistic_recap.png)
+![](images/logistic_recap.png)
 
 This can be drawn as a computation graph this way:
 
-![](/images/logistic_computation_graph.png)
+![](images/logistic_computation_graph.png)
 
 ### Gradient Descent on m Examples
 With m examples, we’d have
@@ -297,7 +297,7 @@ w2 = w2 - alpha * dw2
 b = b - alpha * db
 ```
 
-![](/images/logistic_mexamples.png)
+![](images/logistic_mexamples.png)
 
 
 In this case you have to implement two for loops: one for each training example and one for each feature.
@@ -421,7 +421,7 @@ db = 1 / m * np.sum(dZ)
 dw = 1 / m * X * dz.T
 ```
 
-![](/images/logistic_regression_vectorization.png)
+![](images/logistic_regression_vectorization.png)
 
 
 Put all together it becomes:
@@ -569,13 +569,13 @@ And then do `a = a.reshape((5, 1))`.
 ## Week 3: Shallow neural networks
 ### Neural Networks Overview
 In week 2 we saw a logistic regression expressed as a computation graph. A neural network this is done multiple times.
-![](/images/whatisaNN.png)
+![](images/whatisaNN.png)
 
 ### Neural Network Representation
 Let’s give the NN some names:
 
 
-![](/images/NN_names.png)
+![](images/NN_names.png)
 
 
 The hidden layer is called this way since we don’t see those values in the training set. “a”s are called activations.
@@ -593,7 +593,7 @@ The following image shows this done for the first two nodes (or hidden units) in
 
 The same thing will we done for the next layer (in this case the output layer), that since has a single node it’s going to be exactly like logistic regression.
 
-![](/images/NN_output_sigmoid.png)
+![](images/NN_output_sigmoid.png)
 
 ### Vectorizing across multiple examples
 What we need to do is find a way to transform the vector of the x training examples $$[x_1, \ldots, x_m]$$ into the activations $$a^{[2]}, \ldots, a^{[2](m)} = \widehat{y}^{(m)}$$.
@@ -621,9 +621,9 @@ $$A^{[2]} = \sigma( b^{[2]})$$
 
 
 Z is the old vectors $$w_1^{[2]}, \ldots $$ stacked into a matrix. Same thing for A. One of the properties of this notation is that Z and A horizontally are indexed by the training examples, while vertically on the different nodes. For instance, a training set of 1000 examples and a hidden layer with 5 notes would give us a A and Z matrices of shape (5, 1000). Also the matrix X had m columns, with m the number of training examples, but on the rows it had the number of features.
-![](/images/NN_calculation.png)
+![](images/NN_calculation.png)
 
-![](/images/NN_calculation_output.png)
+![](images/NN_calculation_output.png)
 
 ### Explanation for Vectorized Implementation
 Let’s consider the propagation calculation of 3 training examples, assuming for simplicity that b = 0.
@@ -636,7 +636,7 @@ $$Z^{[3](1)} = W^{[1]}x^{(3)}$$
 
 Now $$W^{[1]}$$ is going to be a matrix, and $$W^{[1]} x^{(1)}$$, $$W^{[2]} x^{(2)}$$ and $$W^{[3]} x^{(3)}$$ all give as an output some column vectors. If we consider the training set X, formed by stacking together all the training examples vertically, when you multiply it for the matrix W, we would end up with columns made of the multiplication of the w column vectors for the x column vectors.
 
-![](/images/vectorization_explanation.png)
+![](images/vectorization_explanation.png)
 
 With python broadcasting, adding b would not create any problem, since it would be transformed into a vector and added to the column vectors we had before.
 
@@ -659,7 +659,7 @@ $$
 a = max(0, z)
 $$
 
-![](/images/activation_pros_cons.png)
+![](images/activation_pros_cons.png)
 
 Some rules of thumb for choosing the activation function:
 * If the output is binary (0, 1), a sigmoid is the natural choice.
@@ -806,7 +806,7 @@ Notice that:
 ### Deep L-layer neural network
 What is a deep NN? It’s a NN with many layers. We say that a logistic regression can be considered as a “shallow” neural network. For instance instead a 5 layer NN would be considered a deep NN.
 
-![](/images/whatisaDNN.png)
+![](images/whatisaDNN.png)
 
 Notation:
 * L is the number of layers in a NN
@@ -815,7 +815,7 @@ Notation:
 * $$w^{[l]}$$ are the weights for layer l
 * $$a^{[l]}$$ is the number of nodes in layer l
 
-![](/images/deepNNnotation.png)
+![](images/deepNNnotation.png)
 
 
 ### Forward and Backward Propagation
@@ -853,12 +853,12 @@ To sum up:
 * We go back calculating the derivatives in the backprop step
 
 
-![](/images/forward_backprop.png)
+![](images/forward_backprop.png)
 
 ### Forward Propagation in a Deep Network
 We previously listed the operations that are necessary to compute a step of forward propagation in a deep network. Let’s see how all the steps would look like for a 4 layers NN:
 
-![](/images/forwardprop.png)
+![](images/forwardprop.png)
 
 Notice how you have to implement a for loop to compute the activations for each layer of the NN.
 
@@ -915,7 +915,7 @@ Let’s say that we want to build a NN to detect faces. What happens in a deep N
 * Second layer learns to identify eyes, noses, etc.
 * Third layer learns to identify different kinds of faces
 
-![](/images/deepNNrepresentations.png)
+![](images/deepNNrepresentations.png)
 
 For sound it can work in a similar way, for example:
 * First layer learns to identify if the sound is going up or down
@@ -935,7 +935,7 @@ y = x1 XOR x2 XOR x3 ... XOR xn
 
 With a deep network, the number of nodes would be $$log(n)$$, while with a single hidden layer it would become $$2^{(n-1)}$$.
 
-![](/images/circuit_theory.png)
+![](images/circuit_theory.png)
 
 
 ### Building blocks of deep neural networks
@@ -950,7 +950,7 @@ Generally, each layer of a NN can be seen as a block that:
 	* Outputs $$da^{[l-1]}$$ using $$w^{[l]}$$, $$b^{[l]}$$ and $$dz^{[l]}$$
 	* Caches $$dw^{[l]}$$ and $$db^{[l]}$$ that is going to be used later
 
-![](/images/deepNNcomputation_step.png)
+![](images/deepNNcomputation_step.png)
 
 The whole computation will therefore be:
 

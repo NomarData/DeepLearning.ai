@@ -57,7 +57,7 @@ plt.scatter(X[0, :], X[1, :], c=Y[0], s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![png](/ProgrammingAssignments/images/output_6_0.png)
+![](images/output_6_0.png)
 
 
 You have:
@@ -139,7 +139,7 @@ print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) 
 
 
 
-![png](/ProgrammingAssignments/images/output_13_1.png)
+![](images/output_13_1.png)
 
 
 **Expected Output**:
@@ -160,7 +160,7 @@ print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) 
 Logistic regression did not work well on the "flower dataset". You are going to train a Neural Network with a single hidden layer.
 
 **Here is our model**:
-![png](/ProgrammingAssignments/images/classification_kiank.png)
+![](images/classification_kiank.png)
 
 **Mathematically**:
 
@@ -509,7 +509,7 @@ Using the cache computed during forward propagation, you can now implement backw
 **Instructions**:
 Backpropagation is usually the hardest (most mathematical) part in deep learning. To help you, here again is the slide from the lecture on backpropagation. You'll want to use the six equations on the right of this slide, since you are building a vectorized implementation.  
 
-![png](/ProgrammingAssignments/images/grad_summary.png)
+![](images/grad_summary.png)
 
 <!--
 $\frac{\partial \mathcal{J} }{ \partial z_{2}^{(i)} } = \frac{1}{m} (a^{[2](i)} - y^{(i)})$
@@ -649,9 +649,9 @@ print ("db2 = "+ str(grads["db2"]))
 
 **Illustration**: The gradient descent algorithm with a good learning rate (converging) and a bad learning rate (diverging). Images courtesy of Adam Harley.
 
-![png](/ProgrammingAssignments/images/sgd.gif)
+![](images/sgd.gif)
 
-![png](/ProgrammingAssignments/images/sgd_bad.gif)
+![](images/sgd_bad.gif)
 
 
 ```python
@@ -995,7 +995,7 @@ plt.title("Decision Boundary for hidden layer size " + str(4))
 
 
 
-![png](/ProgrammingAssignments/images/output_50_2.png)
+![](images/output_50_2.png)
 
 
 **Expected Output**:
@@ -1062,7 +1062,7 @@ for i, n_h in enumerate(hidden_layer_sizes):
 
 
 
-![png](/ProgrammingAssignments/images/output_56_1.png)
+![](images/output_56_1.png)
 
 
 **Interpretation**:
@@ -1117,7 +1117,7 @@ plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![png](/ProgrammingAssignments/images/output_63_0.png)
+![](images/output_63_0.png)
 
 
 Congrats on finishing this Programming Assignment!

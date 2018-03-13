@@ -73,7 +73,7 @@ print ("y = " + str(train_set_y[:, index]) + ", it's a '" + classes[np.squeeze(t
 
 
 
-![png](/ProgrammingAssignments/images/output_6_1.png)
+![](images/output_6_1.png)
 
 
 Many software bugs in deep learning come from having matrix/vector dimensions that don't fit. If you can keep your matrix/vector dimensions straight you will go a long way toward eliminating many bugs.
@@ -217,7 +217,7 @@ It's time to design a simple algorithm to distinguish cat images from non-cat im
 
 You will build a Logistic Regression, using a Neural Network mindset. The following Figure explains why **Logistic Regression is actually a very simple Neural Network!**
 
-![](/ProgrammingAssignments/images/LogReg_kiank.png)
+![](images/LogReg_kiank.png)
 
 **Mathematical expression of the algorithm**:
 
@@ -788,7 +788,7 @@ plt.imshow(test_set_x[:,index].reshape((num_px, num_px, 3)))
 
 
 
-![png](/ProgrammingAssignments/images/output_44_1.png)
+![](images/output_44_1.png)
 
 
 Let's also plot the cost function and the gradients.
@@ -805,7 +805,7 @@ plt.show()
 ```
 
 
-![png](/ProgrammingAssignments/images/output_46_0.png)
+![](images/output_46_0.png)
 
 
 **Interpretation**:
@@ -864,7 +864,7 @@ plt.show()
 
 
 
-![png](/ProgrammingAssignments/images/output_50_1.png)
+![](images/output_50_1.png)
 
 
 **Interpretation**:
