@@ -9,27 +9,28 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Environmental Engineer, Data Scientist, Entrepreneur, Machine Learning enthusiast,
+    Python & R developer, Deep Learning Ninja.
 
-    Open `_data/authors.yml` to edit this text.
+
+    Josep Anton Mir Tutusaus
+
 
   # This photo will be used in the about section.
   picture:
-    path:            https://placehold.it/128x128
+    path:            https://raw.githubusercontent.com/jantonz/DeepLearning.ai/master/docs/assets/img/profile.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+    #srcset:
+    #  1x:            https://github.com/jantonz/DeepLearning.ai/blob/master/docs/assets/img/profile.jpg
+    #  2x:            https://github.com/jantonz/DeepLearning.ai/blob/master/docs/assets/img/profile.jpg
 
   # Social media icons in sidebar.
   # Comment/uncommet to show/hide. Rearrange to change the order in which they appear.
   social:
-    twitter:         <username>
-    github:          <username>
-    download:        https://github.com/qwtel/hydejack-starter-kit/archive/master.zip
-    # email:           mailto:<mail@domain.tld>
+    twitter:         ja_mirtutu
+    github:          jantonz/DeepLearning.ai
+    # download:        https://github.com/jantonz/hydejack-starter-kit/archive/master.zip
+    email:           mailto:jantonz@gmail.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -58,7 +59,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        josepantonmir
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>

@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your page.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://jantonz.github.io
+url:                   https://jantonz.github.io/DeepLearning.ai
 
 # IMPORTANT: Set The "base URL" of your site.
 #
@@ -22,7 +22,7 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Code In deeplearning.ai
+title:                 "[Code In] deeplearning.ai"
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -254,3 +254,52 @@ sass:
 # so that the location of the feed XML stays the same.
 # feed:
 #   path:                atom.xml
+
+# Ordenació dels items de la left sidebar
+# file: _config.yml
+defaults:
+  - scope:
+      path: Course1.md
+    values:
+      menu: true
+      order: 1
+  - scope:
+      path: Course2.md
+    values:
+      menu: true
+      order: 2
+  - scope:
+      path: Course3.md
+    values:
+      menu: true
+      order: 3
+  - scope:
+      path: Course4.md
+    values:
+      menu: true
+      order: 4
+  - scope:
+      path: Course5.md
+    values:
+      menu: true
+      order: 5
+  - scope:
+      path: ProgrammingAssignments.md
+    values:
+      menu: true
+      order: 6
+  - scope:
+      path: About.md
+    values:
+      menu: true
+      order: 7
+  - scope:
+      path: CollectiveIntelligence.md
+    values:
+      menu: true
+      order: 8
+  - scope:
+      path: IntroR.md
+    values:
+      menu: true
+      order: 9
