@@ -1,4 +1,4 @@
-![](---
+---
 layout: list
 title: Course 1
 description: >
