@@ -57,7 +57,7 @@ plt.scatter(X[0, :], X[1, :], c=Y[0], s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![](images/output_6_0.png)
+![]({{ "/ProgrammingAssignments/images/output_6_0.png" | absolute_url }})
 
 
 You have:
@@ -139,7 +139,7 @@ print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) 
 
 
 
-![](images/output_13_1.png)
+![]({{ "/ProgrammingAssignments/images/output_13_1.png" | absolute_url }})
 
 
 **Expected Output**:
@@ -160,7 +160,7 @@ print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) 
 Logistic regression did not work well on the "flower dataset". You are going to train a Neural Network with a single hidden layer.
 
 **Here is our model**:
-![](images/classification_kiank.png)
+![]({{ "/ProgrammingAssignments/images/classification_kiank.png" | absolute_url }})
 
 **Mathematically**:
 
@@ -509,7 +509,7 @@ Using the cache computed during forward propagation, you can now implement backw
 **Instructions**:
 Backpropagation is usually the hardest (most mathematical) part in deep learning. To help you, here again is the slide from the lecture on backpropagation. You'll want to use the six equations on the right of this slide, since you are building a vectorized implementation.  
 
-![](images/grad_summary.png)
+![]({{ "/ProgrammingAssignments/images/grad_summary.png" | absolute_url }})
 
 <!--
 $\frac{\partial \mathcal{J} }{ \partial z_{2}^{(i)} } = \frac{1}{m} (a^{[2](i)} - y^{(i)})$
@@ -649,9 +649,9 @@ print ("db2 = "+ str(grads["db2"]))
 
 **Illustration**: The gradient descent algorithm with a good learning rate (converging) and a bad learning rate (diverging). Images courtesy of Adam Harley.
 
-![](images/sgd.gif)
+![]({{ "/ProgrammingAssignments/images/sgd.gif" | absolute_url }})
 
-![](images/sgd_bad.gif)
+![]({{ "/ProgrammingAssignments/images/sgd_bad.gif" | absolute_url }})
 
 
 ```python
@@ -995,7 +995,7 @@ plt.title("Decision Boundary for hidden layer size " + str(4))
 
 
 
-![](images/output_50_2.png)
+![]({{ "/ProgrammingAssignments/images/output_50_2.png" | absolute_url }})
 
 
 **Expected Output**:
@@ -1062,7 +1062,7 @@ for i, n_h in enumerate(hidden_layer_sizes):
 
 
 
-![](images/output_56_1.png)
+![]({{ "/ProgrammingAssignments/images/output_56_1.png" | absolute_url }})
 
 
 **Interpretation**:
@@ -1117,7 +1117,7 @@ plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![](images/output_63_0.png)
+![]({{ "/ProgrammingAssignments/images/output_63_0.png" | absolute_url }})
 
 
 Congrats on finishing this Programming Assignment!
