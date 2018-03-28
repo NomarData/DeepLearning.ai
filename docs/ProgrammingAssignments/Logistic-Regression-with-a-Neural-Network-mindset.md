@@ -2,8 +2,9 @@
 layout: post
 title: Programming Assignment 1: Logistic Regression with a Neural Network mindset
 ---
+# Course 1, PA week 2
 
-# Course 1 - PA week 1: Logistic Regression with a Neural Network mindset
+# Logistic Regression with a Neural Network mindset
 
 Welcome to your first (required) programming assignment! You will build a logistic regression classifier to recognize  cats. This assignment will step you through how to do this with a Neural Network mindset, and so will also hone your intuitions about deep learning.
 

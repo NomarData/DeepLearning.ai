@@ -3,7 +3,8 @@ layout: post
 title: Programming Assignment 2: Planar data classification with one hidden layer
 ---
 
-# Course 1 - PA week 2: Planar data classification with one hidden layer
+# Course 1, PA week 3
+# Planar data classification with one hidden layer
 
 Welcome to your week 3 programming assignment. It's time to build your first neural network, which will have a hidden layer. You will see a big difference between this model and the one you implemented using logistic regression.
 
